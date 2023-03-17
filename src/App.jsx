@@ -4,8 +4,8 @@ function App() {
   const { data, loading, error } = useFetch('https://jsonplaceholder.typicode.com/users')
 
   return (
-    <div className="App">
-      <h1>Fetch like a Pro</h1>
+    <div classNae="App">
+    <h1>Fetch like a Pro</h1>
       {/* <button onClick={handleCancelRequest}>Cancel Request</button> */}
       <div className="card">
         <ul>
@@ -13,7 +13,7 @@ function App() {
           {loading && <li>Loading...</li>}
           {data?.map((user)=> (
             <>
-            {/* <h1 >{user.username}</h1> */}
+            <h2>{user.username}</h2>
             <li key={user.id}>{user.name}</li>
             
             </>
